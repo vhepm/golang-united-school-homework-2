@@ -18,6 +18,7 @@ type intCustomType int
 const SidesTriangle intCustomType = 3
 const SidesSquare intCustomType = 4
 const SidesCircle intCustomType = 0
+const Pi = 3.14159265359
 
 func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 	var result float64
@@ -28,7 +29,7 @@ func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 	case 4:
 		result = m.Pow(sideLen, 2)
 	case 0:
-		result = m.Pi * m.Pow(sideLen, 2)
+		result = Pi * m.Pow(sideLen, 2)
 	}
 
 	return result
